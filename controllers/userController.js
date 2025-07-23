@@ -54,7 +54,7 @@ const forgotPassController = async (req, res) => {
         user.resetPasswordExpires = Date.now() + 3600000;
         await user.save();
 
-        const resetLink = `http://localhost:3000/reset-password/${resetToken}`;
+        const resetLink = `https://expence-management-system.onrender.com/reset-password/${resetToken}`;
 
 
         const transporter = nodemailer.createTransport({
