@@ -12,7 +12,7 @@ const ForgotPass = () => {
     const submitHandler = async (values) => {
         try {
             setLoading(true);
-            await axios.post('http://localhost:8080/api/v1/users/forgot-password', values);
+            await axios.post('/users/forgot-password', values);
             message.success('Password reset link sent to your email');
         } catch (error) {
             console.error(error);
