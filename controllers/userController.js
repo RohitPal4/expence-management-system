@@ -25,6 +25,7 @@ const registerController = async (req, res) => {
 };
 
 const loginController = async (req, res) => {
+    console.log('Login API hit');
     try {
         const { email, password } = req.body;
 

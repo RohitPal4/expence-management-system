@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Input, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../axiosConfig';
+
 import Spinner from '../components/Spinner';
 
 import '../styles/Register.css';

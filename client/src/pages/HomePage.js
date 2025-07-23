@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { Form, Modal, Input, Select, message, Table, DatePicker } from "antd";
 import { UnorderedListOutlined, AreaChartOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons'
 import Layout from "../components/Layout/Layout";
-import axios from "axios";
+import axios from '../axiosConfig';
 import moment from "moment";
 import Spinner from "../components/Spinner";
 import Analytics from "../components/Analytics";

@@ -24,7 +24,11 @@ app.use((err, req, res, next) => {
 // middlewares
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://expence-management-system.onrender.com', // or '*'
+  credentials: true,
+}));
+
 
 // routes
 app.use('/api/v1/users', require('./routes/userRoute'));
